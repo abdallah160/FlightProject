@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap');
 
-.exlpore-banner-background{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.exlpore-banner-background {
     background: linear-gradient(to right, #1262AE, #3586d1);
     position: absolute;
     top: 0;
@@ -8,41 +14,93 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    
-}
-*{
-    margin: 0;
 }
 
 .explore-banner-container {
     position: relative;
     width: 100vw;
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.explore-overlay{
-    width: 100vw;
-    height: auto;
-    display: block;
-    position: relative;
-    z-index: 2;
 
-}
-.explore-text-overlay{
+.explore-overlay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    font-size: 30px; 
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.explore-text-overlay {
+    position: absolute;
+    font-size: 2rem; 
     z-index: 3;
     top: 35%;
     left: 50%;
     color: rgb(255, 255, 255);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90%;
+    max-width: 800px;
 }
-.explore-text-overlay h1{
+
+.explore-text-overlay h1 {
     font-family: 'Baloo Bhai', sans-serif;
+    font-size: 2.5rem;
 }
-.search{
+
+.explore-text-overlay p {
+    font-size: 1.2rem;
+}
+
+.search {
     position: absolute;
     z-index: 3;
-    top: 60%;
-    left: 50%;
+    top: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+}
+
+
+@media (max-width: 768px) {
+    .explore-text-overlay {
+        font-size: 1.5rem;
+    }
+
+    .explore-text-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .explore-text-overlay p {
+        font-size: 1rem;
+    }
+
+    .search {
+        top: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-text-overlay {
+        font-size: 1.2rem;
+        top: 50;
+    }
+
+    .explore-text-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .explore-text-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .search {
+        top: 50%;
+    }
 }

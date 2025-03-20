@@ -34,3 +34,12 @@
   .weekly-form button{
     max-width: 150px;
   }
+
+  @media (max-width: 480px) {
+    .weekly-form{
+        width: 280px;
+    }
+
+
+
+  }

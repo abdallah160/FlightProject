@@ -1,13 +1,15 @@
 .image-grid {
     display: flex;
+    flex-wrap: wrap; /* يسمح بانتقال الصور لسطر جديد في الشاشات الصغيرة */
     justify-content: center;
-    gap: 48px; /* زيادة المسافة بين الصور */
+    gap: 32px; /* تقليل المسافة قليلًا لجعلها مناسبة للشاشات الصغيرة */
     margin-top: 20px;
   }
   
   .image-card {
     position: relative;
-    width: 400px; /* تكبير الصور */
+    width: 100%;
+    max-width: 400px; /* ضمان أن الصور لا تتجاوز هذا الحجم */
   }
   
   .image-card img {
@@ -25,7 +27,7 @@
     justify-content: space-between;
     color: white;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .price-info {
@@ -35,18 +37,43 @@
   }
   
   .from {
-    font-size: 20px;
+    font-size: 18px;
     opacity: 0.8;
   }
   
   .price {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Baloo Bhai', sans-serif;
   }
-  .plan-section{
+  
+  .plan-section {
     color: #1262AE;
     display: flex;
     justify-content: space-between;
-    margin: 50px 80px 20px 80px
-
+    margin: 50px 80px 20px 80px;
   }
+  
+  /* تحسين الاستجابة للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .image-grid {
+      gap: 20px; /* تقليل المسافة بين الصور */
+    }
+  
+    .image-card {
+      max-width: 90%; /* جعل الصور تأخذ معظم عرض الشاشة دون تجاوز الحواف */
+    }
+  
+    .text-container {
+      font-size: 20px; /* تقليل حجم النصوص */
+    }
+  
+    .price {
+      font-size: 20px;
+    }
+  
+    .plan-section {
+      flex-direction: column; /* جعل العناصر في الأسفل بدلاً من توزيعها أفقياً */
+      margin: 30px 20px 10px 20px;
+    }
+  }
+  

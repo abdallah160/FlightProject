@@ -1,21 +1,94 @@
-.footer{
+.footer {
     display: flex;
-    justify-content: space-around;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
     background: linear-gradient(to right, #1262AE, #1d92ff);
-    height: 200px;
     color: white;
-    
-    padding: 60px;
+    padding: 40px 60px;
 }
 
-.second-section{
-    display: flex;
-    gap: 40px;
+/* القسم الأول: الشعار والوصف */
+.first-section {
+    max-width: 300px;
 }
-.first-section-part{
+
+.first-section img {
+    width: 150px; /* تصغير الشعار ليكون متناسبًا مع الشاشات */
+    margin-bottom: 10px;
+}
+
+.first-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* القسم الثاني: الروابط */
+.second-section {
+    display: flex;
+    gap: 30px;
+}
+
+/* تحسين تنسيق الأعمدة */
+.first-section-part {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
+.first-section-part h2 {
+    font-size: 1.2rem;
+}
+
+.first-section-part p {
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.first-section-part p:hover {
+    color: #ffcc00;
+}
+
+/* تحسين التصميم للأجهزة اللوحية */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 40px;
+    }
+
+    .second-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .first-section {
+        max-width: 100%;
+    }
+
+    .first-section img {
+        width: 120px;
+    }
+}
+
+/* تحسين التصميم للهواتف المحمولة */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .second-section {
+        gap: 15px;
+    }
+
+    .first-section-part h2 {
+        font-size: 1.1rem;
+    }
+
+    .first-section-part p {
+        font-size: 0.85rem;
+    }
+}

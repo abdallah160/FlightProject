@@ -4,6 +4,7 @@ const SearchFlights = () =>{
         <div className='search-flights'>
             <div className='search-flights-title'>
                 <h1>Search Flights</h1>
+                
                 <div>
                 <input type="radio" id="option1" name="options" value="option1"/>
                 <label for="option1">Return</label>
@@ -15,6 +16,9 @@ const SearchFlights = () =>{
                 
             </div>
             <div className='search-flights-boxes'>
+                <div>
+
+                
                 <label>Departure:</label>
                 <input type='text' className='input-box'/>
 
@@ -23,7 +27,12 @@ const SearchFlights = () =>{
 
                 <label>Date:</label>
                 <input type='Date' className='input-box'/>
+                </div>
+                <div>
+
+                
                 <button>SEARCH FLIGHTS</button>
+                </div>
             </div>
         </div>
 

@@ -1,22 +1,107 @@
-.search-flights-title{
+.search-flights {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
-    width: 35vw;
+    flex-direction: column;
+    gap: 15px;
 }
-button{
+
+/* العنوان والخيارات */
+.search-flights-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.search-flights-title h1 {
+    font-size: 1.5rem;
+}
+
+.search-flights-title div {
+    display: flex;
+    gap: 10px;
+}
+
+.search-flights-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
     background-color: #F99A0E;
     border: none;
     border-radius: 5px;
     height: 48px;
     font-weight: 700;
     color: white;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.search-flights{
-    background-color: white;
-    border-radius: 10px;
-    width: 38vw;
-    height: 5vw;
-    padding: 20px 50px 20px 50px;
-    
+button:hover {
+    background-color: #d87f0a;
+}
+
+/* تحسين استجابة التصميم */
+@media (max-width: 768px) {
+    .search-flights {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search-flights-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-flights-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .search-flights-boxes {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-flights {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .search-flights-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .search-flights-title div {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    button {
+        height: 42px;
+        font-size: 1rem;
+    }
+    .search-flights-boxes{
+        display: flex;
+        justify-content: center;
+    }
 }

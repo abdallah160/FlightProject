@@ -1,14 +1,83 @@
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 30px 80px 30px 80px;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.nav-inner1 img {
+    height: 40px; /* تصغير الشعار ليكون متناسبًا مع الشاشات */
 }
-.nav-inner2{
+
+.nav-inner2 {
     display: flex;
+    align-items: center;
+    gap: 15px; /* استبدال الـ margin بـ gap لضبط المسافات */
 }
-.nav-button{
-    all: unset; /* Removes all default styles */
-    cursor: pointer; /* Keeps the pointer cursor */
-    margin: 0px 20px 0px 20px   
+
+.nav-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    color: #1262AE;
+}
+
+.nav-inner2 img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* تحسين الاستجابة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 15px 30px;
+    }
+
+    .nav-inner2 {
+        gap: 10px;
+    }
+
+    .nav-button {
+        font-size: 0.9rem;
+    }
+
+    .nav-inner2 img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* تصميم خاص للأجهزة الصغيرة جدًا */
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-inner2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-button {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+
+    .nav-inner2 img {
+        height: 30px;
+        width: 30px;
+    }
 }
