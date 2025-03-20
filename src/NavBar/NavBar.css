@@ -8,13 +8,13 @@
 }
 
 .nav-inner1 img {
-    height: 40px; /* تصغير الشعار ليكون متناسبًا مع الشاشات */
+    height: 40px; 
 }
 
 .nav-inner2 {
     display: flex;
     align-items: center;
-    gap: 15px; /* استبدال الـ margin بـ gap لضبط المسافات */
+    gap: 15px; 
 }
 
 .nav-button {
@@ -37,7 +37,7 @@
     object-fit: cover;
 }
 
-/* تحسين الاستجابة للأجهزة الصغيرة */
+
 @media (max-width: 768px) {
     .nav-container {
         padding: 15px 30px;
@@ -57,7 +57,7 @@
     }
 }
 
-/* تصميم خاص للأجهزة الصغيرة جدًا */
+
 @media (max-width: 480px) {
     .nav-container {
         flex-direction: column;

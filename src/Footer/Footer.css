@@ -7,13 +7,13 @@
     padding: 40px 60px;
 }
 
-/* القسم الأول: الشعار والوصف */
+
 .first-section {
     max-width: 300px;
 }
 
 .first-section img {
-    width: 150px; /* تصغير الشعار ليكون متناسبًا مع الشاشات */
+    width: 150px; 
     margin-bottom: 10px;
 }
 
@@ -22,13 +22,13 @@
     line-height: 1.5;
 }
 
-/* القسم الثاني: الروابط */
+
 .second-section {
     display: flex;
     gap: 30px;
 }
 
-/* تحسين تنسيق الأعمدة */
+
 .first-section-part {
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
     color: #ffcc00;
 }
 
-/* تحسين التصميم للأجهزة اللوحية */
+
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -74,7 +74,7 @@
     }
 }
 
-/* تحسين التصميم للهواتف المحمولة */
+
 @media (max-width: 480px) {
     .footer {
         padding: 20px;

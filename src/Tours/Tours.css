@@ -65,7 +65,7 @@
     color: #1262AE;
     border-width: 1px;
     border-color: #1262AE;
-    border-style: solid; /* أضف هذه الخاصية */
+    border-style: solid; 
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;

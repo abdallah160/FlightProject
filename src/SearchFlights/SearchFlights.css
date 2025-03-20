@@ -10,7 +10,7 @@
     gap: 15px;
 }
 
-/* العنوان والخيارات */
+
 .search-flights-title {
     display: flex;
     flex-direction: row;
@@ -60,7 +60,7 @@ button:hover {
     background-color: #d87f0a;
 }
 
-/* تحسين استجابة التصميم */
+
 @media (max-width: 768px) {
     .search-flights {
         width: 100%;

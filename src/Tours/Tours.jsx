@@ -1,5 +1,5 @@
 import './Tours.css';
-import Tour from './Tour'; // استيراد الكومبوننت
+import Tour from './Tour'; 
 
 const Tours = () => {
     return (
