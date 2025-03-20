@@ -1,0 +1,57 @@
+.holidays-title{
+    display:  flex;
+    justify-content: space-between;
+    margin: 60px 80px 30px 80px;
+    
+}
+.holidays-title h2{
+    color:#1262AE ;
+}
+.holiday-card {
+    width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.holiday-image {
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.holiday-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.holiday-details {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.holiday-place {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.holiday-code {
+    font-size: 18px;
+    color: gray;
+}
+
+.holiday-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1262AE;
+}
+.holiday-list {
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,22 @@
+.search-flights-title{
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+}
+button{
+    background-color: #F99A0E;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.search-flights{
+    background-color: white;
+    border-radius: 10px;
+    width: 38vw;
+    height: 5vw;
+    padding: 20px 50px 20px 50px;
+    
+}

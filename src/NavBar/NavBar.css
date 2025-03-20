@@ -1,0 +1,14 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px 30px 80px;
+
+}
+.nav-inner2{
+    display: flex;
+}
+.nav-button{
+    all: unset; /* Removes all default styles */
+    cursor: pointer; /* Keeps the pointer cursor */
+    margin: 0px 20px 0px 20px   
+}

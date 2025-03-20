@@ -1,0 +1,16 @@
+.flight-direction{
+    display: flex;
+    justify-content: space-around;
+    color: #1262AE;
+}
+.searches{
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    width: 40vw;
+    
+}
+.depart-on{
+    text-align: center;
+}

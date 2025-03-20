@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    
+    background: linear-gradient(to right, #1262AE, #1d92ff);
+    height: 200px;
+    color: white;
+    
+    padding: 60px;
+}
+
+.second-section{
+    display: flex;
+    gap: 40px;
+}
+.first-section-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+

@@ -1,0 +1,52 @@
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 48px; /* زيادة المسافة بين الصور */
+    margin-top: 20px;
+  }
+  
+  .image-card {
+    position: relative;
+    width: 400px; /* تكبير الصور */
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  .price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .from {
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  
+  .price {
+    font-size: 28px;
+    font-family: 'Baloo Bhai', sans-serif;
+  }
+  .plan-section{
+    color: #1262AE;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px 20px 80px
+
+  }
